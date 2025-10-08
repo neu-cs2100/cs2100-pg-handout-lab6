@@ -1,18 +1,20 @@
 import pandas as pd
+import sys
+sys.path.append(".")
 
 """
-This Lab uses a dataset stored in spam.csv (in the current directory).
+This Lab uses a dataset stored in spam.csv.
 The original dataset is available at https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
 Implement this class to use Pandas to read the data into a dataframe.
 """
 
 class SpamReader:
-    def __init__(self):
+    def __init__(self) -> None:
         # Read spam.csv into a dataframe, stored as a private attribute (two underscores)
         pass
 
-    def sort_by_word_frequency(self, word: str, include_spam = True, include_ham = True) -> pd.DataFrame:
+    def sort_by_word_frequency(self, word: str, include_spam: bool = True, include_ham: bool = True) -> pd.DataFrame:
         # Return a copy of the dataframe, sorted by the frequency of times that the given
         # word appears in the message. The messages in which the word appears most often
         # should be at the top of the dataframe.

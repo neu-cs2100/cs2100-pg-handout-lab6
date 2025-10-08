@@ -1,14 +1,16 @@
 import pandas as pd
+import sys
+sys.path.append(".")
 
 """
-This Lab uses a dataset stored in spam.csv (in the current directory).
+This Lab uses a dataset stored in spam.csv.
 The original dataset is available at https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
 Implement this class to use Pandas to read the data into a dataframe.
 """
 
 class SpamReader:
-    def __init__(self):
+    def __init__(self) -> None:
         # Read spam.csv into a dataframe, stored as a private attribute (two underscores)
         pass
 
